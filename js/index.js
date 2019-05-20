@@ -157,3 +157,8 @@ navBar.forEach(element => {
   element.style.color = 'green'
 });
 
+const pTags = document.querySelectorAll('p');
+
+pTags.forEach(element => {
+    element.style.color = '#A0001E';
+});

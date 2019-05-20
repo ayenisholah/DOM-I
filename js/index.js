@@ -41,6 +41,9 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
+// Button
+var btn = document.querySelector('.cta .cta-text button');
+btn.textContent = "Get Started"
 
 // Images
 var middleImg = document.querySelector('#middle-img');

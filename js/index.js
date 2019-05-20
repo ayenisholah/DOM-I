@@ -43,7 +43,12 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 // Button
 var btn = document.querySelector('.cta .cta-text button');
-btn.textContent = "Get Started"
+btn.textContent = "Get Started";
+
+// Header
+var ctaText = document.getElementsByTagName('h1');
+ctaText[0].textContent = "DOM Is Awesome";
+console.log(ctaText)
 
 // Images
 var middleImg = document.querySelector('#middle-img');

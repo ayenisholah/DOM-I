@@ -91,12 +91,13 @@ featuresContent.textContent = 'Features content elementum magna eros, ac posuere
 var aboutContent = topTextContent[1];
 aboutContent.textContent = 'About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
 
+// Images
 var middleImg = document.querySelector('#middle-img');
 middleImg.src = "img/mid-page-accent.jpg";
 middleImg.alt = "Image of code snippets across the screen";
 
-var logoImg = document.querySelector('#logo-img');
-logoImg.src = "img/logo.png";
+var logoImg = document.querySelector('#cta-img');
+logoImg.src = "img/header-img.png";
 logoImg.alt = "Great Idea! Company logo."
 
 const bottomTextContent = document.querySelectorAll('.bottom-content .text-content p');

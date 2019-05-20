@@ -140,5 +140,20 @@ footer.textContent = 'Copyright Great Idea! 2018';
 const br = document.createElement('br');
 ctaText[0].append(br);
 
-const navBar = document.querySelector('header')
-navBar.style.backgroundColor = 'green'
+// New Nav Item
+const newNavItem1 = document.createElement('a');
+newNavItem1.textContent = 'Blog';
+
+const newNavItem2 = document.createElement('a');
+newNavItem2.textContent = 'Site map'
+
+const navAnchor = document.querySelector('nav');
+navAnchor.appendChild(newNavItem1);
+navAnchor.prepend(newNavItem2);
+
+// Change Nav Color to green
+const navBar = document.querySelectorAll('a')
+navBar.forEach(element => {
+  element.style.color = 'green'
+});
+

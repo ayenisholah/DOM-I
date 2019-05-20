@@ -42,7 +42,16 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 
+// Images
+var middleImg = document.querySelector('#middle-img');
+middleImg.src = "img/mid-page-accent.jpg";
+middleImg.alt = "Image of code snippets across the screen";
 
+var logoImg = document.querySelector('#cta-img');
+logoImg.src = "img/header-img.png";
+logoImg.alt = "Great Idea! Company logo."
+
+// Navigation Links
 const nav = document.getElementsByTagName('a')
 
 var services = nav[0];
@@ -63,6 +72,7 @@ about.textContent = 'About';
 var contact = nav[5];
 contact.textContent = 'Contact';
 
+// Headings
 const mainHeadings = document.getElementsByTagName('h4');
 
 var feat = mainHeadings[0];
@@ -83,6 +93,7 @@ vision.textContent = 'Vision';
 var contact = mainHeadings[5];
 contact.textContent = 'Contact';
 
+// Top Contents
 const topTextContent = document.querySelectorAll('.top-content .text-content p')
 
 var featuresContent = topTextContent[0];
@@ -91,15 +102,7 @@ featuresContent.textContent = 'Features content elementum magna eros, ac posuere
 var aboutContent = topTextContent[1];
 aboutContent.textContent = 'About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
 
-// Images
-var middleImg = document.querySelector('#middle-img');
-middleImg.src = "img/mid-page-accent.jpg";
-middleImg.alt = "Image of code snippets across the screen";
-
-var logoImg = document.querySelector('#cta-img');
-logoImg.src = "img/header-img.png";
-logoImg.alt = "Great Idea! Company logo."
-
+//  Bottom Content
 const bottomTextContent = document.querySelectorAll('.bottom-content .text-content p');
 
 var servicesContent = bottomTextContent[0];
@@ -110,4 +113,16 @@ productsContent.textContent = 'Services content elementum magna eros, ac posuere
 
 var visionContent = bottomTextContent[2];
 visionContent.textContent = 'Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
-console.log(bottomTextContent);
+
+// Contact Content
+const contactContent = document.querySelectorAll('.contact p');
+var address = contactContent[0];
+address.textContent = "123 Way 456 Street Somewhere, USA"
+
+var phone = contactContent[1];
+phone.textContent = "1 (888) 888-8888";
+
+var email = contactContent[2];
+email.textContent = "sales@greatidea.io";
+
+

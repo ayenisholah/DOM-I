@@ -39,7 +39,7 @@ const siteContent = {
 
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+logo.setAttribute('src', siteContent["nav"]["img-src"]);
 
 // Button
 var btn = document.querySelector('.cta .cta-text button');
@@ -57,10 +57,10 @@ middleImg.alt = "Image of code snippets across the screen";
 
 var logoImg = document.querySelector('#cta-img');
 logoImg.src = "img/header-img.png";
-logoImg.alt = "Great Idea! Company logo."
+logoImg.alt = "Great Idea! Company logo.";
 
 // Navigation Links
-const nav = document.getElementsByTagName('a')
+const nav = document.getElementsByTagName('a');
 
 var services = nav[0];
 services.textContent = 'Services';
@@ -84,7 +84,7 @@ contact.textContent = 'Contact';
 const mainHeadings = document.getElementsByTagName('h4');
 
 var feat = mainHeadings[0];
-feat.textContent = 'Features'
+feat.textContent = 'Features';
 
 var about = mainHeadings[1];
 about.textContent = 'About';
@@ -102,30 +102,30 @@ var contact = mainHeadings[5];
 contact.textContent = 'Contact';
 
 // Top Contents
-const topTextContent = document.querySelectorAll('.top-content .text-content p')
+const topTextContent = document.querySelectorAll('.top-content .text-content p');
 
 var featuresContent = topTextContent[0];
 featuresContent.textContent = 'Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
 
 var aboutContent = topTextContent[1];
-aboutContent.textContent = 'About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
+aboutContent.textContent = 'About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
 
 //  Bottom Content
 const bottomTextContent = document.querySelectorAll('.bottom-content .text-content p');
 
 var servicesContent = bottomTextContent[0];
-servicesContent.textContent = 'Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
+servicesContent.textContent = 'Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
 
 var productsContent = bottomTextContent[1];
-productsContent.textContent = 'Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
+productsContent.textContent = 'Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
 
 var visionContent = bottomTextContent[2];
-visionContent.textContent = 'Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
+visionContent.textContent = 'Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
 
 // Contact Content
 const contactContent = document.querySelectorAll('.contact p');
 var address = contactContent[0];
-address.textContent = "123 Way 456 Street Somewhere, USA"
+address.textContent = "123 Way 456 Street Somewhere, USA";
 
 var phone = contactContent[1];
 phone.textContent = "1 (888) 888-8888";
@@ -136,3 +136,9 @@ email.textContent = "sales@greatidea.io";
 // Footer
 var footer = document.querySelector('footer p');
 footer.textContent = 'Copyright Great Idea! 2018';
+
+const br = document.createElement('br');
+ctaText[0].append(br);
+
+const navBar = document.querySelector('header')
+navBar.style.backgroundColor = 'green'

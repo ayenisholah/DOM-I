@@ -125,4 +125,6 @@ phone.textContent = "1 (888) 888-8888";
 var email = contactContent[2];
 email.textContent = "sales@greatidea.io";
 
-
+// Footer
+var footer = document.querySelector('footer p');
+footer.textContent = 'Copyright Great Idea! 2018';

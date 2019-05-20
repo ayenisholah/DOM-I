@@ -74,10 +74,39 @@ about.textContent = 'About';
 var services = mainHeadings[2];
 services.textContent = 'Services';
 
-var products = mainHeadings[2];
-services.textContent = 'Services';
+var products = mainHeadings[3];
+products.textContent = 'Products';
 
+var vision = mainHeadings[4];
+vision.textContent = 'Vision';
 
+var contact = mainHeadings[5];
+contact.textContent = 'Contact';
 
+const topTextContent = document.querySelectorAll('.top-content .text-content p')
 
-console.log(mainHeadings);
+var featuresContent = topTextContent[0];
+featuresContent.textContent = 'Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
+
+var aboutContent = topTextContent[1];
+aboutContent.textContent = 'About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
+
+var middleImg = document.querySelector('#middle-img');
+middleImg.src = "img/mid-page-accent.jpg";
+middleImg.alt = "Image of code snippets across the screen";
+
+var logoImg = document.querySelector('#logo-img');
+logoImg.src = "img/logo.png";
+logoImg.alt = "Great Idea! Company logo."
+
+const bottomTextContent = document.querySelectorAll('.bottom-content .text-content p');
+
+var servicesContent = bottomTextContent[0];
+servicesContent.textContent = 'Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
+
+var productsContent = bottomTextContent[1];
+productsContent.textContent = 'Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
+
+var visionContent = bottomTextContent[2];
+visionContent.textContent = 'Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
+console.log(bottomTextContent);
